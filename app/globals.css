@@ -1,5 +1,23 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #9DAA7E;
+  --color-accent: #E58934;
+  --color-text: #363435;
+  --color-neutral: #E5E7E9;
+  --color-background: #FEFEFE;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+* {
+  box-sizing: border-box;
 }
