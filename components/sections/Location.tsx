@@ -2,7 +2,7 @@ import Container from "../layout/Container";
 
 export default function Location() {
   return (
-    <section className="bg-gray-50 py-20 text-center">
+    <section className="bg-dark py-20 text-center">
       <Container>
         <h2 className="text-3xl font-bold text-primary">
           Atendimento em Ilhéus - BA
