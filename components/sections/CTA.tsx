@@ -1,7 +1,8 @@
 import Container from "../layout/Container";
 
 const whatsappUrl =
-  "https://wa.me/5500000000000?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o";
+  "https://wa.me/5573981693945?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20em%20ilh%C3%A9us";
+const instagramUrl = "https://www.instagram.com/rebecavasconcelloss.fisio";
 
 export default function CTA() {
   return (
@@ -19,14 +20,25 @@ export default function CTA() {
             avaliação orienta o plano de cuidado mais adequado para o seu caso.
           </p>
 
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-10 inline-flex items-center justify-center rounded-lg bg-accent px-7 py-4 text-sm font-bold text-white transition hover:bg-[#cf7426] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary"
-          >
-            Falar no WhatsApp
-          </a>
+          <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex w-full items-center justify-center rounded-lg bg-accent px-7 py-4 text-sm font-bold text-white transition hover:bg-[#cf7426] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary sm:w-auto"
+            >
+              Falar no WhatsApp
+            </a>
+
+            <a
+              href={instagramUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex w-full items-center justify-center rounded-lg border border-white bg-white px-7 py-4 text-sm font-bold text-text transition hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary sm:w-auto"
+            >
+              Conheça nossos trabalhos no Instagram
+            </a>
+          </div>
         </div>
       </Container>
     </section>
