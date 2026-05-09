@@ -1,4 +1,5 @@
 import Container from "../layout/Container";
+import type { CSSProperties } from "react";
 
 const services = [
   {
@@ -31,7 +32,7 @@ export default function Services() {
   return (
     <section id="servicos" className="bg-neutral py-20 sm:py-24">
       <Container>
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="mx-auto max-w-3xl text-center" data-scroll-reveal>
           <p className="text-sm font-semibold uppercase text-accent">
             Especialidades
           </p>
@@ -41,10 +42,16 @@ export default function Services() {
         </div>
 
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((service) => (
+          {services.map((service, index) => (
             <div
               key={service.title}
               className="min-h-48 rounded-lg border border-[#d6d8d8] bg-background p-6 shadow-[0_14px_34px_rgba(54,52,53,0.08)]"
+              data-scroll-reveal="zoom"
+              style={
+                {
+                  "--reveal-delay": `${index * 80}ms`,
+                } as CSSProperties
+              }
             >
               <h3 className="text-xl font-bold text-primary">{service.title}</h3>
               <p className="mt-4 leading-7 text-[#5b5859]">{service.text}</p>

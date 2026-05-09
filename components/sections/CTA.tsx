@@ -8,7 +8,7 @@ export default function CTA() {
   return (
     <section id="contato" className="bg-primary py-20 text-white sm:py-24">
       <Container>
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="mx-auto max-w-3xl text-center" data-scroll-reveal>
           <p className="text-sm font-semibold uppercase text-white">
             Agendamento
           </p>

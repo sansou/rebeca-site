@@ -5,7 +5,7 @@ export default function Location() {
     <section className="bg-[#f7f8f5] py-20 sm:py-24">
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
-          <div>
+          <div data-scroll-reveal="fade-left">
             <p className="text-sm font-semibold uppercase text-accent">
               Área de atendimento
             </p>
@@ -25,6 +25,7 @@ export default function Location() {
             loading="lazy"
             title="Mapa de Ilhéus, Bahia"
             className="rounded-lg border-0 shadow-[0_14px_34px_rgba(54,52,53,0.12)]"
+            data-scroll-reveal="fade-right"
           />
         </div>
       </Container>

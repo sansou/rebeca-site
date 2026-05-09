@@ -14,9 +14,10 @@ export default function About() {
             height={480}
             sizes="(min-width: 1024px) 40vw, 100vw"
             className="h-[360px] w-full rounded-lg bg-white object-contain p-8 shadow-[0_14px_34px_rgba(54,52,53,0.08)]"
+            data-scroll-reveal="fade-left"
           />
 
-          <div>
+          <div data-scroll-reveal="fade-right">
             <p className="text-sm font-semibold uppercase text-accent">
               Sobre a profissional
             </p>

@@ -4,10 +4,12 @@ import Services from "@/components/sections/Services";
 import Testimonials from "@/components/sections/Testimonials";
 import Location from "@/components/sections/Location";
 import CTA from "@/components/sections/CTA";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function HomePage() {
   return (
     <main className="bg-background text-text">
+      <ScrollReveal />
       <Hero />
       <About />
       <Services />

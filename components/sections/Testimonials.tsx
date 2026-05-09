@@ -1,4 +1,5 @@
 import Container from "../layout/Container";
+import type { CSSProperties } from "react";
 
 const testimonials = [
   {
@@ -17,7 +18,7 @@ export default function Testimonials() {
   return (
     <section className="bg-background py-20 sm:py-24">
       <Container>
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="mx-auto max-w-3xl text-center" data-scroll-reveal>
           <p className="text-sm font-semibold uppercase text-accent">
             Depoimentos
           </p>
@@ -27,10 +28,16 @@ export default function Testimonials() {
         </div>
 
         <div className="mt-12 grid gap-5 md:grid-cols-2">
-          {testimonials.map((testimonial) => (
+          {testimonials.map((testimonial, index) => (
             <figure
               key={testimonial.author}
               className="rounded-lg border border-neutral bg-white p-7 shadow-[0_14px_34px_rgba(54,52,53,0.06)]"
+              data-scroll-reveal
+              style={
+                {
+                  "--reveal-delay": `${index * 100}ms`,
+                } as CSSProperties
+              }
             >
               <blockquote className="text-lg leading-8 text-[#4f4c4d]">
                 &quot;{testimonial.quote}&quot;
