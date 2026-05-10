@@ -2,7 +2,7 @@ import Container from "../layout/Container";
 
 export default function Location() {
   return (
-    <section className="bg-[#f7f8f5] py-20 sm:py-24">
+    <section id="atendimento" className="bg-[#f7f8f5] py-20 sm:py-24">
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
           <div data-scroll-reveal="fade-left">
@@ -16,6 +16,14 @@ export default function Location() {
               Sessões realizadas com agendamento prévio para adultos, idosos e
               pacientes em recuperação ortopédica.
             </p>
+            <ul className="mt-6 grid gap-3 text-sm font-semibold text-[#4f4c4d] sm:grid-cols-2 lg:grid-cols-1">
+              <li className="rounded-lg bg-white px-4 py-3 shadow-[0_10px_24px_rgba(54,52,53,0.06)]">
+                Atendimento no conforto da casa
+              </li>
+              <li className="rounded-lg bg-white px-4 py-3 shadow-[0_10px_24px_rgba(54,52,53,0.06)]">
+                Plano de cuidado definido após avaliação
+              </li>
+            </ul>
           </div>
 
           <iframe

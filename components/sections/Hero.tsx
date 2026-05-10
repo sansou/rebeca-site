@@ -3,7 +3,7 @@ import Container from "../layout/Container";
 
 export default function Hero() {
   return (
-    <section className="relative isolate flex min-h-[82vh] items-center overflow-hidden bg-text py-20 text-white">
+    <section className="relative isolate flex min-h-[calc(82vh-4rem)] items-center overflow-hidden bg-text py-20 text-white">
       <Image
         src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1800&q=80"
         alt="Fisioterapeuta orientando atendimento de reabilitação"
@@ -33,13 +33,13 @@ export default function Hero() {
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a
               href="#contato"
-              className="inline-flex items-center justify-center rounded-lg bg-accent px-6 py-3 text-sm font-bold text-white transition hover:bg-[#cf7426] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-text"
+              className="inline-flex min-h-12 items-center justify-center rounded-lg bg-accent px-6 text-sm font-bold text-white shadow-[0_14px_30px_rgba(229,137,52,0.28)] transition hover:bg-[#cf7426] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-text"
             >
               Agendar avaliação
             </a>
             <a
               href="#servicos"
-              className="inline-flex items-center justify-center rounded-lg border border-white px-6 py-3 text-sm font-bold text-white transition hover:bg-white hover:text-text focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-text"
+              className="inline-flex min-h-12 items-center justify-center rounded-lg border border-white/80 bg-white/10 px-6 text-sm font-bold text-white backdrop-blur transition hover:bg-white hover:text-text focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-text"
             >
               Ver especialidades
             </a>

@@ -2,9 +2,15 @@ import Image from "next/image";
 import rebecaLogo from "../../img/RebecaLogo.jpeg";
 import Container from "../layout/Container";
 
+const highlights = [
+  ["Foco", "Ortopedia"],
+  ["Formato", "Domiciliar"],
+  ["Público", "Adultos e idosos"],
+];
+
 export default function About() {
   return (
-    <section className="bg-background py-20 sm:py-24">
+    <section id="sobre" className="bg-background py-20 sm:py-24">
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <Image
@@ -13,7 +19,7 @@ export default function About() {
             width={720}
             height={480}
             sizes="(min-width: 1024px) 40vw, 100vw"
-            className="h-[360px] w-full rounded-lg bg-white object-contain p-8 shadow-[0_14px_34px_rgba(54,52,53,0.08)]"
+            className="h-[360px] w-full rounded-lg border border-[#e8e3df] bg-white object-contain p-8 shadow-[0_14px_34px_rgba(54,52,53,0.08)]"
             data-scroll-reveal="fade-left"
           />
 
@@ -35,6 +41,20 @@ export default function About() {
               Cada atendimento considera a rotina, as limitações e os objetivos
               de quem precisa voltar a se mover com mais segurança e autonomia.
             </p>
+
+            <dl className="mt-8 grid gap-3 sm:grid-cols-3">
+              {highlights.map(([term, detail]) => (
+                <div
+                  key={term}
+                  className="rounded-lg border border-[#e1dfdb] bg-[#fbfaf8] p-4"
+                >
+                  <dt className="text-xs font-bold uppercase text-accent">
+                    {term}
+                  </dt>
+                  <dd className="mt-1 text-sm font-bold text-text">{detail}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </div>
       </Container>
