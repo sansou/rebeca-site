@@ -1,18 +1,19 @@
 import Image from "next/image";
+import rebecaLogo from "../../img/RebecaLogo.jpeg";
 import Container from "../layout/Container";
 
 export default function Hero() {
   return (
     <section className="relative isolate flex min-h-[calc(82vh-4rem)] items-center overflow-hidden bg-text py-20 text-white">
       <Image
-        src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1800&q=80"
-        alt="Fisioterapeuta orientando atendimento de reabilitação"
+        src={rebecaLogo}
+        alt=""
         fill
         priority
         sizes="100vw"
-        className="absolute inset-0 -z-20 h-full w-full object-cover"
+        className="absolute inset-0 -z-20 h-full w-full bg-white object-contain"
       />
-      <div className="absolute inset-0 -z-10 bg-[rgba(54,52,53,0.68)]" />
+      <div className="absolute inset-0 -z-10 bg-[rgba(54,52,53,0.72)]" />
 
       <Container>
         <div className="max-w-3xl">

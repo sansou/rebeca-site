@@ -1,5 +1,5 @@
 import Image from "next/image";
-import rebecaLogo from "../../img/RebecaLogo.jpeg";
+import rebecaPhoto from "../../img/rebeca.jpeg";
 import Container from "../layout/Container";
 
 const highlights = [
@@ -14,12 +14,12 @@ export default function About() {
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <Image
-            src={rebecaLogo}
+            src={rebecaPhoto}
             alt="Rebeca Santos Vasconcelos"
             width={720}
             height={480}
             sizes="(min-width: 1024px) 40vw, 100vw"
-            className="h-[360px] w-full rounded-lg border border-[#e8e3df] bg-white object-contain p-8 shadow-[0_14px_34px_rgba(54,52,53,0.08)]"
+            className="h-[360px] w-full rounded-lg border border-[#e8e3df] bg-white object-cover shadow-[0_14px_34px_rgba(54,52,53,0.08)]"
             data-scroll-reveal="fade-left"
           />
 
